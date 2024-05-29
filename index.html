@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta here -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<meta name="og:title"  content="augment reality">
+	<meta name="og:description" content="The best experinece that you might need in your life.">
+	<meta name="og:author" content="Matthew Dominic O. Fermin">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Copy Clipboard (Midterm Exam)</title>
+  </head>
+  <body>
+	<div class="bg-white">
+		<header class="absolute inset-x-0 top-0 z-50">
+		  <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+			<div class="flex lg:flex-1">
+			  <a href="#" class="-m-1.5 p-1.5">
+				<span class="sr-only">Your Company</span>
+				<img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+			  </a>
+			</div>
+			<div class="flex lg:hidden">
+			  <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+				<span class="sr-only">Open main menu</span>
+				<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+				  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
+			  </button>
+			</div>
+			<div class="hidden lg:flex lg:gap-x-12">
+			  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
+			  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+			  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+			  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+			</div>
+			<div class="hidden lg:flex lg:flex-1 lg:justify-end">
+			  <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+			</div>
+		  </nav>
+		  <!-- Mobile menu, show/hide based on menu open state. -->
+		  <div class="lg:hidden" role="dialog" aria-modal="true">
+			<!-- Background backdrop, show/hide based on slide-over state. -->
+			<div class="fixed inset-0 z-50"></div>
+			<div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+			  <div class="flex items-center justify-between">
+				<a href="#" class="-m-1.5 p-1.5">
+				  <span class="sr-only">Your Company</span>
+				  <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+				</a>
+				<button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+				  <span class="sr-only">Close menu</span>
+				  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+				  </svg>
+				</button>
+			  </div>
+			  <div class="mt-6 flow-root">
+				<div class="-my-6 divide-y divide-gray-500/10">
+				  <div class="space-y-2 py-6">
+					<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+					<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+					<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+					<a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+				  </div>
+				  <div class="py-6">
+					<a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</header>
+	  
+		<div class="relative isolate px-6 pt-14 lg:px-8">
+		  <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+			<div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+		  </div>
+		  <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+			<div class="hidden sm:mb-8 sm:flex sm:justify-center">
+			  <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+				Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+			  </div>
+			</div>
+			<div class="text-center">
+			  <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
+			  <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+			  <div class="mt-10 flex items-center justify-center gap-x-6">
+				<a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+			<div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+		  </div>
+		</div>
+	  </div>
+	  
+    </section>
+
+    <!-- Snippets Section -->
+    <section id="snippets">
+      <div class="my-20 section-container">
+        <p>Handle your snippets with care</p>
+        <p class="mb-24 text-xl section-content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
+          aperiam reprehenderit ipsum molestiae eos possimus fugiat rem ratione
+          provident, sit alias! Cum similique qui sint sed reiciendis corporis
+          quam maxime!
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <div class="my-20 section-container">
+        <div class="relative flex flex-col md:flex-row md:space-x-32">
+          <!-- Image -->
+          <div class="md:w-1/2">
+            <img
+              src="images/image-computer.png"
+              alt=""
+              class="md:absolute top-0 right-[50%]"
+            />
+          </div>
+
+          <!-- Items Container -->
+          <div
+            class="flex flex-col mt-16 mb-24 space-y-12 text-xl md:w-1/2 md:mb-60 md:text-left md:pl-16"
+          >
+            <!-- Item 1 -->
+            <div>
+              <p>Quick Search</p>
+              <p class="max-w-md text-grayishBlue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                eaque aperiam quod magni, nobis non?
+              </p>
+            </div>
+            <!-- Item 2 -->
+            <div>
+              <p>iCloud Sync</p>
+              <p class="max-w-md text-grayishBlue">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                maxime corporis nostrum facilis ipsam modi.
+              </p>
+            </div>
+            <!-- Item 3 -->
+            <div>
+              <p>Completely History</p>
+              <p class="max-w-md text-grayishBlue">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
+                aperiam possimus odio perferendis saepe aspernatur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access Anywhere Section -->
+    <section id="access">
+      <div class="my-20 section-container">
+        <p>Clipboard accessibility on the go</p>
+        <p class="mb-24 text-xl section-content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo,
+          blanditiis debitis ut corrupti itaque rem voluptatem incidunt
+          assumenda modi officia.
+        </p>
+
+        <img src="images/image-devices.png" alt="" class="mx-auto" />
+      </div>
+    </section>
+
+    <!-- Supercharge Section -->
+    <section id="supercharge">
+      <div class="my-20 section-container">
+        <p>Supercharge your workflow</p>
+        <p class="mb-16 text-xl section-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+        <!-- Items Container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12"
+        >
+          <!-- Item 1 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-blacklist.svg" alt="" class="mb-6" />
+            <p>Create Blacklists</p>
+            <p class="max-w-md text-grayishBlue">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic,
+              voluptate!
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-text.svg" alt="" class="mb-6" />
+            <p>Plain Text Snippets</p>
+            <p class="max-w-md text-grayishBlue">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
+              totam.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="flex flex-col items-center space-y-5">
+            <img src="images/icon-preview.svg" alt="" class="mb-6" />
+            <p>Sneak Preview</p>
+            <p class="max-w-md text-grayishBlue">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+              porro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references">
+      <div
+        class="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0"
+      >
+        <img src="images/logo-google.png" alt="" />
+        <img src="images/logo-ibm.png" alt="" />
+        <img src="images/logo-microsoft.png" alt="" />
+        <img src="images/logo-hp.png" alt="" />
+        <img src="images/logo-vector-graphics.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section id="bottom">
+      <div class="my-20 section-container">
+        <p>Clipboard for iOS and MacOS</p>
+        <p class="mb-10 text-xl section-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae
+          iure voluptatem saepe asperiores voluptates voluptatibus esse
+          provident corporis impedit neque, quidem libero dolor placeat.
+        </p>
+
+        <!-- Button Container -->
+        <div class="button-container">
+          <a
+            href="#"
+            class="p-4 px-8 duration-200 rounded-full shadow-lg bg-strongCyan hover:opacity-80"
+          >
+            Download for iOS
+          </a>
+          <a
+            href="#"
+            class="p-4 px-8 duration-200 rounded-full shadow-lg bg-lightBlue hover:opacity-80"
+          >
+            Download for Mac
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123382.4151497146!2d120.4733495972832!3d14.898017927716108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33965eea12cf976f%3A0x92afee12a1d47006!2sLubao%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1716976411232!5m2!1sen!2sph" width="1000" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </section>
+
+    <footer class="bg-gray-50">
+      <div class="section-container">
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <!-- Image -->
+          <img src="images/logo.svg" alt="" class="scale-50" />
+          <!-- Container for Menus & Social -->
+          <div
+            class="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-grayishBlue"
+          >
+            <!-- Menus -->
+            <div
+              class="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-24 md:space-y-0"
+            >
+              <!-- Menu 1 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div><a href="#" class="hover:text-strongCyan">FAQs</a></div>
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Contact Us</a>
+                </div>
+              </div>
+              <!-- Menu 2 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Privacy Policy</a>
+                </div>
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Press Kit</a>
+                </div>
+              </div>
+              <!-- Menu 3 -->
+              <div class="flex flex-col space-y-4 text-center md:text-left">
+                <div>
+                  <a href="#" class="hover:text-strongCyan">Install Guide</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex justify-between w-32 py-1">
+              <a href="#"
+                ><img
+                  src="images/icon-facebook.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/icon-twitter.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="images/icon-instagram.svg"
+                  alt=""
+                  class="duration-200 ficon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
